@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>faceToFace</title>
+  <!-- <link rel="stylesheet" href="./style.css"> -->
+<style>
+  *{
+    padding:0;margin:0;
+    box-sizing: border-box;
+  }
+form{
+  padding: 3px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #000;
+}
+form input,button{
+  padding: 10px;
+
+}
+form input{
+  border: 0;
+  width: 90%;
+}
+form button{
+  widows: 9%;
+  background-color: rgb(130,224,255);
+  border: none;
+}
+</style>
+</head>
+<body>
+  <ul id="message"></ul>
+  <form action="">
+    <input type="text" id="m" autocomplete="off"/>
+    <button>send</button>
+  </form>
+  <!-- <script src="./index.js"></script> -->
+
+  <script src="/socket.io/socket.io.js"></script>
+<script>
+let socket=io()
+</script>
+</body>
+</html>
